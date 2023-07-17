@@ -3,27 +3,323 @@
 <head>
   <title>WEB-115 Final Project</title>
   <script src="projectJS.js" defer></script>
+  <style>
+    #container {
+        border: 2px solid;
+        margin: auto;
+        width: 50%;
+        padding: 5px;
+    }
+
+    h1, h2, p {
+        text-align: center;
+    }
+
+    form, #mon, #tues, #wed, #thurs, #fri, #sat, #sun {
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+    }
+
+    #container img {
+        width: 100%;
+        text-align: center;
+    }
+  </style>
 </head>
 <body>
-    <h1>Joseph Sozio</h1>
-    <h1>WEB_115 Section 0003</h1>
-    <h2>Build Your Meal Plan</h2>
-    <form id="myForm">
-        <label for="name">Enter Name:</label><br>
-        <input type="text" id="name" name="name"><br>
-        <br>
-        <label for="email">Enter Email:</label><br>
-        <input type="email" id="email" name="email"><br>
-        <br>
-        <label for="goal">Goal for the week:</label><br>
-        <select id="goal" name="goal">
-            <option value="select">Select a Goal</option>
-            <option value="weight">Lose Weight</option>
-            <option value="muscle">Build Muscle</option>
-            <option value="energy">Increase Energy</option>
-        </select><br>
-        <br>
-        <button type="submit">Submit</button>
-    </form>
+    <div id="container">
+        <img src="web115_final_banner.jpg" alt="Build Your Meal Plan banner" width="900" height="300">
+        <form id="myForm">
+            <label for="name">Enter Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <br>
+            <label for="email">Enter Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <br>
+            <label for="goal">Goal for the week:</label><br>
+            <select id="goal" name="goal">
+                <option value="select">Select a Goal</option>
+                <option value="Lose Weight">Lose Weight</option>
+                <option value="Build Muscle">Build Muscle</option>
+                <option value="Increase Energy">Increase Energy</option>
+            </select><br>
+            <div id="mon">
+                <p>Monday:</p>
+                <label for="mondayBreakfast">Breakfast:</label><br>
+                <select id="mondayBreakfast" name="mondayBreakfast">
+                    <option value="select">Please Select</option>
+                    <option value="Yogurt Parfait">Yogurt Parfait</option>
+                    <option value="Protein Oatmeal">Protein Oatmeal</option>
+                    <option value="Dark Chocolate Muffin">Dark Chocolate Muffin</option>
+                </select><br>
+                <label for="mondaySnack1">Snack 1:</label><br>
+                <select id="mondaySnack1" name="mondaySnack1">
+                    <option value="select">Please Select</option>
+                    <option value="Apple">Apple</option>
+                    <option value="Protein Bites">Protein Bites</option>
+                    <option value="Energy Bites">Energy Bites</option>
+                </select><br>
+                <label for="mondayLunch">Lunch:</label><br>
+                <select id="mondayLunch" name="mondayLunch">
+                    <option value="select">Please Select</option>
+                    <option value="Garden Salad">Garden Salad</option>
+                    <option value="Grilled Chicken Wrap">Grilled Chicken Wrap</option>
+                    <option value="Chia Pudding">Chia Pudding</option>
+                </select><br>
+                <label for="mondaySnack2">Snack 2:</label><br>
+                <select id="mondaySnack2" name="mondaySnack2">
+                    <option value="select">Please Select</option>
+                    <option value="Apple">Apple</option>
+                    <option value="Protein Bites">Protein Bites</option>
+                    <option value="Energy Bites">Energy Bites</option>
+                </select><br>
+                <label for="mondayDinner">Dinner:</label><br>
+                <select id="mondayDinner" name="mondayDinner">
+                    <option value="select">Please Select</option>
+                    <option value="Quinoa Bowl">Quinoa Bowl</option>
+                    <option value="Steak Bowl">Steak Bowl</option>
+                    <option value="Acai Bowl">Acai Bowl</option>
+                </select><br>
+            </div>
+            <div id="tues">
+                <p>Tuesday:</p>
+                <label for="tuesBreakfast">Breakfast:</label><br>
+                <select id="tuesBreakfast" name="tuesBreakfast">
+                    <option value="select">Please Select</option>
+                    <option value="Yogurt Parfait">Yogurt Parfait</option>
+                    <option value="Protein Oatmeal">Protein Oatmeal</option>
+                    <option value="Dark Chocolate Muffin">Dark Chocolate Muffin</option>
+                </select><br>
+                <label for="tuesSnack1">Snack 1:</label><br>
+                <select id="tuesSnack1" name="tuesSnack1">
+                    <option value="select">Please Select</option>
+                    <option value="Apple">Apple</option>
+                    <option value="Protein Bites">Protein Bites</option>
+                    <option value="Energy Bites">Energy Bites</option>
+                </select><br>
+                <label for="tuesLunch">Lunch:</label><br>
+                <select id="tuesLunch" name="tuesLunch">
+                    <option value="select">Please Select</option>
+                    <option value="Garden Salad">Garden Salad</option>
+                    <option value="Grilled Chicken Wrap">Grilled Chicken Wrap</option>
+                    <option value="Chia Pudding">Chia Pudding</option>
+                </select><br>
+                <label for="tuesSnack2">Snack 2:</label><br>
+                <select id="tuesSnack2" name="tuesSnack2">
+                    <option value="select">Please Select</option>
+                    <option value="Apple">Apple</option>
+                    <option value="Protein Bites">Protein Bites</option>
+                    <option value="Energy Bites">Energy Bites</option>
+                </select><br>
+                <label for="tuesDinner">Dinner:</label><br>
+                <select id="tuesDinner" name="tuesDinner">
+                    <option value="select">Please Select</option>
+                    <option value="Quinoa Bowl">Quinoa Bowl</option>
+                    <option value="Steak Bowl">Steak Bowl</option>
+                    <option value="Acai Bowl">Acai Bowl</option>
+                </select><br>
+            </div>
+            <div id="wed">
+                <p>Wednesday:</p>
+                <label for="wedBreakfast">Breakfast:</label><br>
+                <select id="wedBreakfast" name="wedBreakfast">
+                    <option value="select">Please Select</option>
+                    <option value="Yogurt Parfait">Yogurt Parfait</option>
+                    <option value="Protein Oatmeal">Protein Oatmeal</option>
+                    <option value="Dark Chocolate Muffin">Dark Chocolate Muffin</option>
+                </select><br>
+                <label for="wedSnack1">Snack 1:</label><br>
+                <select id="wedSnack1" name="wedSnack1">
+                    <option value="select">Please Select</option>
+                    <option value="Apple">Apple</option>
+                    <option value="Protein Bites">Protein Bites</option>
+                    <option value="Energy Bites">Energy Bites</option>
+                </select><br>
+                <label for="wedLunch">Lunch:</label><br>
+                <select id="wedLunch" name="wedLunch">
+                    <option value="select">Please Select</option>
+                    <option value="Garden Salad">Garden Salad</option>
+                    <option value="Grilled Chicken Wrap">Grilled Chicken Wrap</option>
+                    <option value="Chia Pudding">Chia Pudding</option>
+                </select><br>
+                <label for="wedSnack2">Snack 2:</label><br>
+                <select id="wedSnack2" name="wedSnack2">
+                    <option value="select">Please Select</option>
+                    <option value="Apple">Apple</option>
+                    <option value="Protein Bites">Protein Bites</option>
+                    <option value="Energy Bites">Energy Bites</option>
+                </select><br>
+                <label for="wedDinner">Dinner:</label><br>
+                <select id="wedDinner" name="wedDinner">
+                    <option value="select">Please Select</option>
+                    <option value="Quinoa Bowl">Quinoa Bowl</option>
+                    <option value="Steak Bowl">Steak Bowl</option>
+                    <option value="Acai Bowl">Acai Bowl</option>
+                </select><br>
+            </div>
+            <div id="thurs">
+                <p>Thursday:</p>
+                <label for="thursBreakfast">Breakfast:</label><br>
+                <select id="thursBreakfast" name="thursBreakfast">
+                    <option value="select">Please Select</option>
+                    <option value="Yogurt Parfait">Yogurt Parfait</option>
+                    <option value="Protein Oatmeal">Protein Oatmeal</option>
+                    <option value="Dark Chocolate Muffin">Dark Chocolate Muffin</option>
+                </select><br>
+                <label for="thursSnack1">Snack 1:</label><br>
+                <select id="thursSnack1" name="thursSnack1">
+                    <option value="select">Please Select</option>
+                    <option value="Apple">Apple</option>
+                    <option value="Protein Bites">Protein Bites</option>
+                    <option value="Energy Bites">Energy Bites</option>
+                </select><br>
+                <label for="thursLunch">Lunch:</label><br>
+                <select id="thursLunch" name="thursLunch">
+                    <option value="select">Please Select</option>
+                    <option value="Garden Salad">Garden Salad</option>
+                    <option value="Grilled Chicken Wrap">Grilled Chicken Wrap</option>
+                    <option value="Chia Pudding">Chia Pudding</option>
+                </select><br>
+                <label for="thursSnack2">Snack 2:</label><br>
+                <select id="thursSnack2" name="thursSnack2">
+                    <option value="select">Please Select</option>
+                    <option value="Apple">Apple</option>
+                    <option value="Protein Bites">Protein Bites</option>
+                    <option value="Energy Bites">Energy Bites</option>
+                </select><br>
+                <label for="thursDinner">Dinner:</label><br>
+                <select id="thursDinner" name="thursDinner">
+                    <option value="select">Please Select</option>
+                    <option value="Quinoa Bowl">Quinoa Bowl</option>
+                    <option value="Steak Bowl">Steak Bowl</option>
+                    <option value="Acai Bowl">Acai Bowl</option>
+                </select><br>
+            </div>
+            <div id="fri">
+                <p>Friday:</p>
+                <label for="friBreakfast">Breakfast:</label><br>
+                <select id="friBreakfast" name="friBreakfast">
+                    <option value="select">Please Select</option>
+                    <option value="Yogurt Parfait">Yogurt Parfait</option>
+                    <option value="Protein Oatmeal">Protein Oatmeal</option>
+                    <option value="Dark Chocolate Muffin">Dark Chocolate Muffin</option>
+                </select><br>
+                <label for="friSnack1">Snack 1:</label><br>
+                <select id="friSnack1" name="friSnack1">
+                    <option value="select">Please Select</option>
+                    <option value="Apple">Apple</option>
+                    <option value="Protein Bites">Protein Bites</option>
+                    <option value="Energy Bites">Energy Bites</option>
+                </select><br>
+                <label for="friLunch">Lunch:</label><br>
+                <select id="friLunch" name="friLunch">
+                    <option value="select">Please Select</option>
+                    <option value="Garden Salad">Garden Salad</option>
+                    <option value="Grilled Chicken Wrap">Grilled Chicken Wrap</option>
+                    <option value="Chia Pudding">Chia Pudding</option>
+                </select><br>
+                <label for="friSnack2">Snack 2:</label><br>
+                <select id="friSnack2" name="friSnack2">
+                    <option value="select">Please Select</option>
+                    <option value="Apple">Apple</option>
+                    <option value="Protein Bites">Protein Bites</option>
+                    <option value="Energy Bites">Energy Bites</option>
+                </select><br>
+                <label for="friDinner">Dinner:</label><br>
+                <select id="friDinner" name="friDinner">
+                    <option value="select">Please Select</option>
+                    <option value="Quinoa Bowl">Quinoa Bowl</option>
+                    <option value="Steak Bowl">Steak Bowl</option>
+                    <option value="Acai Bowl">Acai Bowl</option>
+                </select><br>
+            </div>
+            <div id="sat">
+                <p>Saturday:</p>
+                <label for="satBreakfast">Breakfast:</label><br>
+                <select id="satBreakfast" name="satBreakfast">
+                    <option value="select">Please Select</option>
+                    <option value="Yogurt Parfait">Yogurt Parfait</option>
+                    <option value="Protein Oatmeal">Protein Oatmeal</option>
+                    <option value="Dark Chocolate Muffin">Dark Chocolate Muffin</option>
+                </select><br>
+                <label for="satSnack1">Snack 1:</label><br>
+                <select id="satSnack1" name="satSnack1">
+                    <option value="select">Please Select</option>
+                    <option value="Apple">Apple</option>
+                    <option value="Protein Bites">Protein Bites</option>
+                    <option value="Energy Bites">Energy Bites</option>
+                </select><br>
+                <label for="satLunch">Lunch:</label><br>
+                <select id="satLunch" name="satLunch">
+                    <option value="select">Please Select</option>
+                    <option value="Garden Salad">Garden Salad</option>
+                    <option value="Grilled Chicken Wrap">Grilled Chicken Wrap</option>
+                    <option value="Chia Pudding">Chia Pudding</option>
+                </select><br>
+                <label for="satSnack2">Snack 2:</label><br>
+                <select id="satSnack2" name="satSnack2">
+                    <option value="select">Please Select</option>
+                    <option value="Apple">Apple</option>
+                    <option value="Protein Bites">Protein Bites</option>
+                    <option value="Energy Bites">Energy Bites</option>
+                </select><br>
+                <label for="satDinner">Dinner:</label><br>
+                <select id="satDinner" name="satDinner">
+                    <option value="select">Please Select</option>
+                    <option value="Quinoa Bowl">Quinoa Bowl</option>
+                    <option value="Steak Bowl">Steak Bowl</option>
+                    <option value="Acai Bowl">Acai Bowl</option>
+                </select><br>
+            </div>
+            <div id="sun">
+                <p>Sunday:</p>
+                <label for="sunBreakfast">Breakfast:</label><br>
+                <select id="sunBreakfast" name="sunBreakfast">
+                    <option value="select">Please Select</option>
+                    <option value="Yogurt Parfait">Yogurt Parfait</option>
+                    <option value="Protein Oatmeal">Protein Oatmeal</option>
+                    <option value="Dark Chocolate Muffin">Dark Chocolate Muffin</option>
+                </select><br>
+                <label for="sunSnack1">Snack 1:</label><br>
+                <select id="sunSnack1" name="sunSnack1">
+                    <option value="select">Please Select</option>
+                    <option value="Apple">Apple</option>
+                    <option value="Protein Bites">Protein Bites</option>
+                    <option value="Energy Bites">Energy Bites</option>
+                </select><br>
+                <label for="sunLunch">Lunch:</label><br>
+                <select id="sunLunch" name="sunLunch">
+                    <option value="select">Please Select</option>
+                    <option value="Garden Salad">Garden Salad</option>
+                    <option value="Grilled Chicken Wrap">Grilled Chicken Wrap</option>
+                    <option value="Chia Pudding">Chia Pudding</option>
+                </select><br>
+                <label for="sunSnack2">Snack 2:</label><br>
+                <select id="sunSnack2" name="sunSnack2">
+                    <option value="select">Please Select</option>
+                    <option value="Apple">Apple</option>
+                    <option value="Protein Bites">Protein Bites</option>
+                    <option value="Energy Bites">Energy Bites</option>
+                </select><br>
+                <label for="sunDinner">Dinner:</label><br>
+                <select id="sunDinner" name="sunDinner">
+                    <option value="select">Please Select</option>
+                    <option value="Quinoa Bowl">Quinoa Bowl</option>
+                    <option value="Steak Bowl">Steak Bowl</option>
+                    <option value="Acai Bowl">Acai Bowl</option>
+                </select><br>
+            </div>
+            <br>
+            <input type="button" id="myButton" value="Create Meal Plan">
+            <br>
+            <input type="button" id="resetButton" value="Reset Form">
+        </form>
+    </div>
 </body>
 </html>
